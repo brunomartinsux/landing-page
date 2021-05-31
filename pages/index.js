@@ -22,7 +22,7 @@ export default function Home() {
         <Benefites/>
         <Prices/>
         <CallToAction/>
-        <div className="pt-20 space-y-8 sm:space-y-20">
+        <div className="py-20 space-y-8 sm:space-y-20">
           <h1 className="px-4 sm:text-center text-3xl sm:text-5xl">Perguntas frequentes</h1>
           <div className="sm:px-48 space-y-8">
             <AcordionStep/>
@@ -32,6 +32,20 @@ export default function Home() {
             <AcordionStep/>
           </div>
         </div>
+        <footer className="bg-gray-800 text-center py-14 space-y-8">
+          <h3 className="text-xl sm:text-2xl text-gray-300">Are you ready?</h3>
+          <h1 className="text-4xl sm:text-6xl text-white">Let’s get started</h1>
+          <button className="px-10 py-5 bg-white rounded-lg font-medium text-blue-500">CADASTRE-SE</button>
+          <div className="flex flex-col space-y-4 text-white text-lg">
+            <a href="#">Serviços</a>
+            <a href="#">Preços</a>
+            <a href="#">Perguntas Frequentes</a>
+          </div>
+          <h3 className="text-lg text-gray-300 px-24">Copyright © 2020. 
+Política de privacidade e 
+Termos de Uso</h3>
+
+        </footer>
       </div>
       
       
@@ -56,7 +70,7 @@ function AcordionStep() {
   return (
   <div>
       <div className="flex px-4 space-x-2">
-        <h2 className="text-xl sm:text-4xl font-medium text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet?</h2>
+        <h2 className="text-xl sm:text-2xl font-medium text-gray-600 sm:mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet?</h2>
         <button onClick={changeAcordion}>
           <svg width="15" height="15" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1.5 1.75L6 6.25L10.5 1.75" stroke="#2563EB" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
