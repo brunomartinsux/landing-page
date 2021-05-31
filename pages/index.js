@@ -2,10 +2,7 @@ import Head from 'next/head'
 import { useState } from 'react'
 
 export default function Home() {
-
   
-
- 
 
   return (
     <div className="w-full min-h-screen">
@@ -23,63 +20,125 @@ export default function Home() {
       <div className="bg-white">
         <Services/>
         <Benefites/>
-        <div className="mb-20">
-        <div className="mt-24 text-center space-y-4">
-          <h1 className="font-medium text-3xl text-gray-700">Nossos Preços</h1>
-          <h3 className="text-xl text-gray-600">Lorem ipsum dolor sit amet consect adipisicing elit. </h3>
-        </div>
-        <div className="mt-8 space-y-10 sm:space-y-0 sm:justify-between sm:flex sm:px-40">
-        <div className="text-center  mx-12 py-2 shadow-2xl space-y-4">
-          <div>
-            <img className="mx-auto h-12" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/department-store_1f3ec.png"/>
-            <h2 className="font-medium text-3xl text-gray-700 mt-2">Mensal</h2>
-            <h3 className="line-through text-xl text-gray-600 mt-2">R$1300</h3>
-          </div>
-          <div className="px-4">
-            <hr className="mt-4"/>
-            <h1 className="font-medium text-5xl text-blue-500 mt-4">R$960</h1>
-            <h2 className="text-xl text-gray-600 mt-4">por mês</h2>
-            <h2 className="text-2xl bg-green-100 px-4 py-4 rounded-3xl text-green-500 mt-4 mb-5">15% de desconto</h2>
+        <Prices/>
+        <CallToAction/>
+        <div className="pt-20 space-y-8 sm:space-y-20">
+          <h1 className="px-4 sm:text-center text-3xl sm:text-5xl">Perguntas frequentes</h1>
+          <div className="sm:px-48 space-y-8">
+            <AcordionStep/>
+            <AcordionStep/>
+            <AcordionStep/>
+            <AcordionStep/>
+            <AcordionStep/>
           </div>
         </div>
-        <div className="text-center  mx-12 py-2 shadow-2xl space-y-4">
-          <div>
-            <img className="mx-auto h-12" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/office-building_1f3e2.png"/>
-            <h2 className="font-medium text-3xl text-gray-700 mt-2">Semestral</h2>
-            <h3 className="line-through text-xl text-gray-600 mt-2">R$1300</h3>
-          </div>
-          <div className="px-4">
-            <hr className="mt-4"/>
-            <h1 className="font-medium text-5xl text-blue-500 mt-4">R$1170</h1>
-            <h2 className="text-xl text-gray-600 mt-4">por mês</h2>
-            <h2 className="text-2xl bg-green-100 px-4 py-4 rounded-3xl text-green-500 mt-4 mb-5">15% de desconto</h2>
-          </div>
-        </div>
-        <div className="text-center  mx-12 py-2 shadow-2xl space-y-4">
-          <div>
-            <img className="mx-auto h-12" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/classical-building_1f3db-fe0f.png"/>
-            <h2 className="font-medium text-3xl text-gray-700 mt-2">Anual</h2>
-            <h3 className="line-through text-xl text-gray-600 mt-2">R$1300</h3>
-          </div>
-          <div className="px-4">
-            <hr className="my-4"/>
-            <h1 className="font-medium text-5xl text-blue-500 mt-4">R$935</h1>
-            <h2 className="text-xl text-gray-600 mt-4">por mês</h2>
-            <h2 className="text-2xl bg-green-100 px-4 py-4 rounded-3xl text-green-500 mt-4 mb-5">15% de desconto</h2>
-          </div>
-        </div>
-        
-
-        </div>
-      </div>
       </div>
       
       
-      <div className="bg-gray-600">cadastro</div>
+      
     </main>
 
 
 
+  </div>
+  )
+}
+
+function AcordionStep() {
+
+  const [isOpen, setOpen] = useState(false)
+
+  function changeAcordion() {
+    const newState = !isOpen
+    setOpen(newState)
+  }
+  
+  return (
+  <div>
+      <div className="flex px-4 space-x-2">
+        <h2 className="text-xl sm:text-4xl font-medium text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet?</h2>
+        <button onClick={changeAcordion}>
+          <svg width="15" height="15" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.5 1.75L6 6.25L10.5 1.75" stroke="#2563EB" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <hr className="my-4"/>
+      <div className={isOpen ? "px-4" : "px-4 hidden"}>
+      <h2 className="text-xl sm:text-2xl text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisi orci, dictum lobortis in ullamcorper. Est vel fames cras massa nulla. Mi praesent pharetra egestas vestibulum sed sodales. Imperdiet orci morbi nibh in massa. Ultricies aliquam proin amet pellentesque ipsum, ante eu, nunc dignissim. Imperdiet magna laoreet iaculis eu urna dignissim id ut.</h2>
+      </div>
+    </div>
+  )
+}
+
+
+function CallToAction() {
+
+  return (
+    <div className="bg-gray-50 py-12 space-y-8 sm:flex sm:justify-between">
+    <div className="px-4 sm:px-40">
+      <h1 className="text-3xl sm:text-6xl font-medium text-gray-700">Ready to dive in?</h1>
+      <h1 className="text-3xl sm:text-6xl font-medium text-blue-500">Start your free trial today.</h1>
+    </div>
+    <div className="px-4 sm:px-40 space-x-3 ">
+      <button className="px-5 sm:px-10 py-3 sm:py-6 sm:text-xl bg-blue-500 font-medium text-white rounded-lg">Cadastre-se</button>
+      <button className="px-5 sm:px-10 py-3 sm:py-6 sm:text-xl bg-white shadow-2xl font-medium text-blue-500 rounded-lg">Saiba mais</button>
+    </div>
+  </div>
+  )
+}
+
+function Prices() {
+
+  return(
+    <div className="pb-20">
+    <div className="mt-24 text-center space-y-4">
+      <h1 className="font-medium text-3xl text-gray-700">Nossos Preços</h1>
+      <h3 className="text-xl text-gray-600">Lorem ipsum dolor sit amet consect adipisicing elit. </h3>
+    </div>
+    <div className="mt-8 space-y-10 sm:space-y-0 sm:justify-between sm:flex sm:px-40">
+    <div className="text-center  mx-12 py-2 shadow-2xl space-y-4">
+      <div>
+        <img className="mx-auto h-12" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/department-store_1f3ec.png"/>
+        <h2 className="font-medium text-3xl text-gray-700 mt-2">Mensal</h2>
+        <h3 className="line-through text-xl text-gray-600 mt-2">R$1300</h3>
+      </div>
+      <div className="px-4">
+        <hr className="mt-4"/>
+        <h1 className="font-medium text-5xl text-blue-500 mt-4">R$960</h1>
+        <h2 className="text-xl text-gray-600 mt-4">por mês</h2>
+        <h2 className="text-2xl bg-green-100 px-4 py-4 rounded-3xl text-green-500 mt-4 mb-5">15% de desconto</h2>
+      </div>
+    </div>
+    <div className="text-center  mx-12 py-2 shadow-2xl space-y-4">
+      <div>
+        <img className="mx-auto h-12" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/office-building_1f3e2.png"/>
+        <h2 className="font-medium text-3xl text-gray-700 mt-2">Semestral</h2>
+        <h3 className="line-through text-xl text-gray-600 mt-2">R$1300</h3>
+      </div>
+      <div className="px-4">
+        <hr className="mt-4"/>
+        <h1 className="font-medium text-5xl text-blue-500 mt-4">R$1170</h1>
+        <h2 className="text-xl text-gray-600 mt-4">por mês</h2>
+        <h2 className="text-2xl bg-green-100 px-4 py-4 rounded-3xl text-green-500 mt-4 mb-5">15% de desconto</h2>
+      </div>
+    </div>
+    <div className="text-center  mx-12 py-2 shadow-2xl space-y-4">
+      <div>
+        <img className="mx-auto h-12" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/classical-building_1f3db-fe0f.png"/>
+        <h2 className="font-medium text-3xl text-gray-700 mt-2">Anual</h2>
+        <h3 className="line-through text-xl text-gray-600 mt-2">R$1300</h3>
+      </div>
+      <div className="px-4">
+        <hr className="my-4"/>
+        <h1 className="font-medium text-5xl text-blue-500 mt-4">R$935</h1>
+        <h2 className="text-xl text-gray-600 mt-4">por mês</h2>
+        <h2 className="text-2xl bg-green-100 px-4 py-4 rounded-3xl text-green-500 mt-4 mb-5">15% de desconto</h2>
+      </div>
+    </div>
+    
+
+    </div>
   </div>
   )
 }
