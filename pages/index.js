@@ -62,7 +62,7 @@ export default function Home() {
             <a href="#prices">Preços</a>
             <a href="#faq">Perguntas Frequentes</a>
           </div>
-          <h3 className="text-lg text-gray-300 px-24">Copyright © 2021. 
+          <h3 className="text-lg text-gray-300 px-24">Copyright  © 2021. 
 Política de privacidade e 
 Termos de Uso</h3>
 
