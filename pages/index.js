@@ -54,7 +54,7 @@ export default function Home() {
           <h3 className="text-xl sm:text-2xl text-gray-300">Cadastro em 2 minutos</h3>
           <h1 className="text-4xl sm:text-6xl text-white">Inteligência Tributária</h1>
           <a href="https://9ry4w2x347i.typeform.com/to/uJhg5eLd">
-          <button className="px-10 py-5 bg-white rounded-lg font-medium text-blue-500">Cadastre-se</button>
+          <button className="mt-5 px-10 py-5 bg-white rounded-lg font-medium text-blue-500">Cadastre-se</button>
           </a>
           
           <div className="flex flex-col space-y-4 text-white text-lg">
@@ -136,24 +136,24 @@ function Prices() {
       <div>
         <img className="mx-auto h-12" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/department-store_1f3ec.png"/>
         <h2 className="font-medium text-3xl text-gray-700 mt-2">Mensal</h2>
-        <h3 className="line-through text-xl text-gray-600 mt-2">R$1300</h3>
+        <h3 className="line-through text-xl text-gray-600 mt-2">R$1350</h3>
       </div>
       <div className="px-4">
         <hr className="mt-4"/>
-        <h1 className="font-medium text-5xl text-blue-500 mt-4">R$960</h1>
+        <h1 className="font-medium text-5xl text-blue-500 mt-4">R$945</h1>
         <h2 className="text-xl text-gray-600 mt-4">por mês</h2>
-        <h2 className="text-2xl bg-green-100 px-4 py-4 rounded-3xl text-green-500 mt-4 mb-5">15% de desconto</h2>
+        <h2 className="text-2xl bg-green-100 px-4 py-4 rounded-3xl text-green-500 mt-4 mb-5">30% de desconto</h2>
       </div>
     </div>
     <div className="text-center  mx-12 py-2 shadow-2xl space-y-4">
       <div>
         <img className="mx-auto h-12" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/office-building_1f3e2.png"/>
         <h2 className="font-medium text-3xl text-gray-700 mt-2">Semestral</h2>
-        <h3 className="line-through text-xl text-gray-600 mt-2">R$1300</h3>
+        <h3 className="line-through text-xl text-gray-600 mt-2">R$1350</h3>
       </div>
       <div className="px-4">
         <hr className="mt-4"/>
-        <h1 className="font-medium text-5xl text-blue-500 mt-4">R$1170</h1>
+        <h1 className="font-medium text-5xl text-blue-500 mt-4">R$1150</h1>
         <h2 className="text-xl text-gray-600 mt-4">por mês</h2>
         <h2 className="text-2xl bg-green-100 px-4 py-4 rounded-3xl text-green-500 mt-4 mb-5">15% de desconto</h2>
       </div>
@@ -162,13 +162,13 @@ function Prices() {
       <div>
         <img className="mx-auto h-12" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/classical-building_1f3db-fe0f.png"/>
         <h2 className="font-medium text-3xl text-gray-700 mt-2">Anual</h2>
-        <h3 className="line-through text-xl text-gray-600 mt-2">R$1300</h3>
+        <h3 className="line-through text-xl text-gray-600 mt-2">R$1350</h3>
       </div>
       <div className="px-4">
         <hr className="my-4"/>
-        <h1 className="font-medium text-5xl text-blue-500 mt-4">R$935</h1>
+        <h1 className="font-medium text-5xl text-blue-500 mt-4">R$810</h1>
         <h2 className="text-xl text-gray-600 mt-4">por mês</h2>
-        <h2 className="text-2xl bg-green-100 px-4 py-4 rounded-3xl text-green-500 mt-4 mb-5">15% de desconto</h2>
+        <h2 className="text-2xl bg-green-100 px-4 py-4 rounded-3xl text-green-500 mt-4 mb-5">40% de desconto</h2>
       </div>
     </div>
     
@@ -209,7 +209,7 @@ function Benefites() {
                     <path d="M8.75 1.1875L3.59375 6.34375L1.25 4" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
-              <h3 className="text-lg">Robos e Algoritmos trabalhando ao seu favor.</h3>
+              <h3 className="text-lg">Robos e Algoritmos Jurídicos.</h3>
               </div>
               <div className="flex flex-row space-x-2">
               <div className="bg-blue-500 p-2 rounded-full">
@@ -217,7 +217,7 @@ function Benefites() {
                     <path d="M8.75 1.1875L3.59375 6.34375L1.25 4" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
-              <h3 className="text-lg">Planos para atender todos os modelos de clientes.</h3>
+              <h3 className="text-lg">Planos para todos as situações.</h3>
               </div>
               <div className="flex flex-row space-x-2">
               <div className="bg-blue-500 p-2 rounded-full">
@@ -225,7 +225,7 @@ function Benefites() {
                     <path d="M8.75 1.1875L3.59375 6.34375L1.25 4" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
-              <h3 className="text-lg">Pagamento via PIX, Cartão de Crédito, Cartão de Débito ou Boleto.</h3>
+              <h3 className="text-lg">Pagamento via Mercado Pago.</h3>
               </div>
             </div>
           </div>
