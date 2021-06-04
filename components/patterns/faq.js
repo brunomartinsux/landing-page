@@ -11,7 +11,7 @@ export default function Faq() {
             />
             <AcordionStep
             title="Como faço para contratar o serviço e quais os métodos de pagamento?"
-            subtitle="Preencha seus dados em nosso Cadastro, nossa equipe entrará em contato com você requerendo os documentos necessários para o prosseguimento de sua defesa bem como a melhor forma de pagamento. Os pagamentos são feitos através do Mercado Pago, portanto, aceitamos todas as formas de pagamento da plataforma."
+            subtitle="Preencha seus dados em nosso Cadastro, nossa equipe entrará em contato com você requerendo os documentos necessários para prosseguir com sua defesa, bem como a melhor forma de pagamento. Os pagamentos são feitos através do Mercado Pago, portanto, aceitamos todas as formas de pagamento da plataforma."
             />
             <AcordionStep
             title="Como faço para cancelar o serviço?"

@@ -4,8 +4,8 @@ export default function Services() {
     <div className="mt-20 mb-16 justify-between px-4 sm:px-56">
     <div id="services" className="space-y-2 sm:pt-24 sm:text-center">
         <h3 className="text-xl text-blue-500 font-medium">NOSSOS SERVIÇOS</h3>
-        <h1 className="text-4xl text-gray-700 font-medium">Melhor recuperaração fiscal para seu negócio</h1>
-        <h3 className="text-2xl text-gray-600">Equipe  composta por  engenheiros e advogados com mais de 20 anos de experiência no mercado, focados em oferecer a melhor recuperação fiscal do Brasil.</h3>
+        <h1 className="text-4xl text-gray-700 font-medium">Melhor solução fiscal para seu negócio!</h1>
+        <h3 className="text-2xl text-gray-600">Equipe  composta por  engenheiros de software e advogados com mais de 20 anos de experiência no mercado, focados em oferecer a melhor recuperação fiscal do Brasil.</h3>
     </div>
     <div className="py-10 space-y-10 sm:space-y-0 sm:space-x-8 sm:flex justify-between">
         <div className="flex flex-row space-x-4 sm:w-1/2">
@@ -15,8 +15,8 @@ export default function Services() {
             </svg>
         </div>
         <div>
-            <h1 className="text-2xl text-gray-700">Preço acessível e democrático</h1>
-            <h3 className="text-xl text-gray-600">Usando as mesmas ferramentas de empresas do Vale do Sílicio, California, a Datajus consegue oferecer a experiência mais moderna entre todas as consultorias tributárias com o preço mais acessível.</h3>
+            <h1 className="text-2xl text-gray-700">Preço acessível</h1>
+            <h3 className="text-xl text-gray-600">Usando as ferramentas mais poderosas do mercado, presentes em empresas do Vale do Sílicio, elevamos a experiência da consultoria tributária na Datajus. Somos o que há de mais moderno no ramo e com o preço mais acessível!</h3>
         </div>
         </div>
         <div className="flex flex-row space-x-4 sm:w-1/2">
@@ -27,7 +27,7 @@ export default function Services() {
         </div>
         <div>
             <h1 className="text-2xl text-gray-700">Corpo Jurídico</h1>
-            <h3 className="text-xl text-gray-600">Não se preocupe com os advogados. Nossos clientes contam com um time jurídico compostos por advogados especilizados em direito tributário para representar sua empresa.</h3>
+            <h3 className="text-xl text-gray-600">Não se preocupe com os advogados. Nossos clientes contam com um time jurídico composto por advogados especializados em direito tributário para representar sua empresa.</h3>
         </div>
         </div>
     </div>
@@ -40,7 +40,7 @@ export default function Services() {
             </div>
             <div>
             <h1 className="text-2xl text-gray-700">Inteligência Artificial</h1>
-            <h3 className="text-xl text-gray-600">Somos o primeiro escritório tributário a desenvolver uma tecnologia totalmente focado em acelerar a produtividade em processos de execução fiscal, transformando nossos advogados em verdadeiras máquinas.</h3>
+            <h3 className="text-xl text-gray-600">Somos o primeiro escritório tributário a desenvolver uma tecnologia totalmente focada em acelerar a produtividade do consultor em processos de execução fiscal, transformando-os em verdadeiras máquinas.</h3>
             </div>
         </div>
         <div className="flex flex-row space-x-4 sm:w-1/2">
@@ -51,7 +51,7 @@ export default function Services() {
             </div>
             <div>
             <h1 className="text-2xl text-gray-700">Comunicação Simples e Clara</h1>
-            <h3 className="text-xl text-gray-600">Sem burocracia para conversar com advogados, nossos clientes tem consultorias ilimitadas, além de receber notificações a cada pequena movimentação processual.</h3>
+            <h3 className="text-xl text-gray-600">Sem burocracia para conversar com advogados, nossos clientes possuem acesso à consultorias ilimitadas, além de receberem notificações a cada movimentação processual.</h3>
             </div>
         </div>
     </div>

@@ -62,7 +62,7 @@ function FormData(event) {
 return (
 <div className="bg-white p-4 sm:px-6 sm:mr-36 sm:w-1/4 rounded-lg shadow-xl">
         <div className="pb-9 sm:pb-10 sm:pt-8 space-y-4">
-            <h1 className="text-2xl text-gray-700">Comece agora a recuperar a saúde da sua empresa. ⚖️</h1>
+            <h1 className="text-2xl text-gray-700">Comece agora a recuperar a saúde fiscal da sua empresa! ⚖️</h1>
             <h3 className="text-lg text-gray-600">Nossos consultores entrarão em contato.</h3>
         </div>
         <form className="space-y-6 sm:space-y-9" onSubmit={FormSubmit}>
